@@ -1,0 +1,800 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		81283C3B230D805000566D63 /* ChallengeViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81283C3A230D805000566D63 /* ChallengeViewer.swift */; };
+		8158D240232F11BA0093E122 /* FSCDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8158D23F232F11BA0093E122 /* FSCDetailView.swift */; };
+		81FD2688231C5E02007FBD6C /* ForeignSubCapitalsMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81FD2687231C5E02007FBD6C /* ForeignSubCapitalsMain.swift */; };
+		82159F12216043280018E46B /* ChallengeModeSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82159F11216043280018E46B /* ChallengeModeSelect.swift */; };
+		821A61812333AF64001D38D6 /* Capitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821A61802333AF64001D38D6 /* Capitals.swift */; };
+		821E2E61215667CF00055F5F /* PracticeResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E2E60215667CF00055F5F /* PracticeResults.swift */; };
+		821E2E632156845000055F5F /* right.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 821E2E622156844F00055F5F /* right.mp3 */; };
+		821E2E662156845C00055F5F /* finish.wav in Resources */ = {isa = PBXBuildFile; fileRef = 821E2E642156845B00055F5F /* finish.wav */; };
+		821E2E672156845C00055F5F /* wrong.wav in Resources */ = {isa = PBXBuildFile; fileRef = 821E2E652156845B00055F5F /* wrong.wav */; };
+		821E2E6A215684F200055F5F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 821E2E69215684F200055F5F /* AVFoundation.framework */; };
+		821E3EB8229B5D1600702349 /* OHCircleSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 821E3EB7229B5D1600702349 /* OHCircleSegue.swift */; };
+		82307508213D6CCB002215CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82307507213D6CCB002215CB /* AppDelegate.swift */; };
+		8230750D213D6CCB002215CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8230750B213D6CCB002215CB /* Main.storyboard */; };
+		8230750F213D6CCC002215CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8230750E213D6CCC002215CB /* Assets.xcassets */; };
+		82307512213D6CCC002215CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82307510213D6CCC002215CB /* LaunchScreen.storyboard */; };
+		8230751A213D6D6A002215CB /* StartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82307519213D6D6A002215CB /* StartScreen.swift */; };
+		8230751C213D79AC002215CB /* ModeSelect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8230751B213D79AC002215CB /* ModeSelect.swift */; };
+		82487EF62186157000273F15 /* OrderBooksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82487EF52186157000273F15 /* OrderBooksView.swift */; };
+		8251146F21A84C2E00226386 /* Futura Heavy font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251145C21A84C1900226386 /* Futura Heavy font.ttf */; };
+		8251147021A84C2E00226386 /* Futura Extra Black font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251145D21A84C1A00226386 /* Futura Extra Black font.ttf */; };
+		8251147121A84C2E00226386 /* Futura Bold Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251145E21A84C1B00226386 /* Futura Bold Italic font.ttf */; };
+		8251147221A84C2E00226386 /* Futura Light Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251145F21A84C1C00226386 /* Futura Light Italic font.ttf */; };
+		8251147321A84C2E00226386 /* Futura Bold font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146021A84C1D00226386 /* Futura Bold font.ttf */; };
+		8251147421A84C2E00226386 /* unicode.futurabb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146121A84C1F00226386 /* unicode.futurabb.ttf */; };
+		8251147521A84C2E00226386 /* Futura Light font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146221A84C2000226386 /* Futura Light font.ttf */; };
+		8251147621A84C2E00226386 /* Futura Book Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146321A84C2200226386 /* Futura Book Italic font.ttf */; };
+		8251147721A84C2E00226386 /* Futura Book font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146421A84C2300226386 /* Futura Book font.ttf */; };
+		8251147821A84C2E00226386 /* futur.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146521A84C2400226386 /* futur.ttf */; };
+		8251147921A84C2E00226386 /* futura medium condensed bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146621A84C2500226386 /* futura medium condensed bt.ttf */; };
+		8251147A21A84C2E00226386 /* Futura XBlk BT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146721A84C2600226386 /* Futura XBlk BT.ttf */; };
+		8251147B21A84C2E00226386 /* tt0205m_.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146821A84C2700226386 /* tt0205m_.ttf */; };
+		8251147C21A84C2E00226386 /* Futura-CondensedLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146921A84C2800226386 /* Futura-CondensedLight.otf */; };
+		8251147D21A84C2E00226386 /* futura light bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146A21A84C2900226386 /* futura light bt.ttf */; };
+		8251147E21A84C2E00226386 /* futura medium bt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146B21A84C2A00226386 /* futura medium bt.ttf */; };
+		8251147F21A84C2E00226386 /* Futura Medium Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146C21A84C2C00226386 /* Futura Medium Italic font.ttf */; };
+		8251148021A84C2E00226386 /* unicode.futurab.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146D21A84C2D00226386 /* unicode.futurab.ttf */; };
+		8251148121A84C2E00226386 /* Futura Heavy Italic font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8251146E21A84C2E00226386 /* Futura Heavy Italic font.ttf */; };
+		8251148321A84DD800226386 /* userLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8251148221A84DD800226386 /* userLogin.swift */; };
+		8259A66A2160465E0056819D /* ChallengeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259A6692160465E0056819D /* ChallengeGame.swift */; };
+		825AE5D1213F34DA003F3B6D /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AE5D0213F34DA003F3B6D /* TestView.swift */; };
+		825AE5D3213F395A003F3B6D /* GeoQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825AE5D2213F395A003F3B6D /* GeoQuestions.swift */; };
+		825D1D4C2172795700651DE9 /* Bungee-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 825D1D4B2172795700651DE9 /* Bungee-Regular.ttf */; };
+		825E6AE72156F6250083ED9A /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 825E6AE62156F6250083ED9A /* MainMenu.swift */; };
+		826355CB217284FC00ED5F63 /* seguisb.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355BF217284FB00ED5F63 /* seguisb.ttf */; };
+		826355CC217284FC00ED5F63 /* seguisbi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C0217284FB00ED5F63 /* seguisbi.ttf */; };
+		826355CD217284FC00ED5F63 /* seguili.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C1217284FB00ED5F63 /* seguili.ttf */; };
+		826355CE217284FC00ED5F63 /* segoeuil.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C2217284FB00ED5F63 /* segoeuil.ttf */; };
+		826355CF217284FC00ED5F63 /* segoeuiz.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C3217284FB00ED5F63 /* segoeuiz.ttf */; };
+		826355D0217284FC00ED5F63 /* seguisli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C4217284FC00ED5F63 /* seguisli.ttf */; };
+		826355D1217284FC00ED5F63 /* seguibli.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C5217284FC00ED5F63 /* seguibli.ttf */; };
+		826355D2217284FC00ED5F63 /* segoeui.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C6217284FC00ED5F63 /* segoeui.ttf */; };
+		826355D3217284FC00ED5F63 /* seguibl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C7217284FC00ED5F63 /* seguibl.ttf */; };
+		826355D4217284FC00ED5F63 /* segoeuib.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C8217284FC00ED5F63 /* segoeuib.ttf */; };
+		826355D5217284FC00ED5F63 /* segoeuii.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355C9217284FC00ED5F63 /* segoeuii.ttf */; };
+		826355D6217284FC00ED5F63 /* segoeuisl.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 826355CA217284FC00ED5F63 /* segoeuisl.ttf */; };
+		826355DC2173A05100ED5F63 /* ScoreMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826355DB2173A05100ED5F63 /* ScoreMainCell.swift */; };
+		826BA80522997CE4009DD977 /* GeoStatQuizSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BA80422997CE3009DD977 /* GeoStatQuizSetup.swift */; };
+		826BA809229A185F009DD977 /* StatTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BA808229A185F009DD977 /* StatTestView.swift */; };
+		826BA80B229A1902009DD977 /* GeoStatsQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826BA80A229A1902009DD977 /* GeoStatsQuestions.swift */; };
+		8297EE2922983FA500E798B5 /* geoStatContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297EE2822983FA500E798B5 /* geoStatContainer.swift */; };
+		8297EE2C2298400300E798B5 /* geoStatSub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297EE2B2298400300E798B5 /* geoStatSub.swift */; };
+		8297EE2E2298406D00E798B5 /* geoContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297EE2D2298406D00E798B5 /* geoContainer.swift */; };
+		8297EE302298626000E798B5 /* statSubCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8297EE2F2298626000E798B5 /* statSubCell.swift */; };
+		82BAE8AC218F30150054B912 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 82BAE8AB218F30150054B912 /* GoogleService-Info.plist */; };
+		82C02A75222F6E6C0029A2B7 /* factCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C02A74222F6E6C0029A2B7 /* factCell.swift */; };
+		82C1959C2191EA1800CF8212 /* DatabaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C1959B2191EA1800CF8212 /* DatabaseView.swift */; };
+		82C392842230AB3900E3145B /* onlineBooks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C392832230AB3900E3145B /* onlineBooks.swift */; };
+		82C392862230B14900E3145B /* purchaseTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82C392852230B14900E3145B /* purchaseTableCell.swift */; };
+		82D6858E2287485700B246AD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 82D6858D2287485700B246AD /* StoreKit.framework */; };
+		82DB671C21572CFC008F249D /* FactFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB671B21572CFC008F249D /* FactFiles.swift */; };
+		82DB671E2157DD6B008F249D /* Factoid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB671D2157DD6B008F249D /* Factoid.swift */; };
+		82DB6720215810C2008F249D /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB671F215810C2008F249D /* MapView.swift */; };
+		82DB672221582332008F249D /* LocationSearchTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82DB672121582332008F249D /* LocationSearchTable.swift */; };
+		82E3F0ED21A9F737008E6FE6 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82E3F0EC21A9F737008E6FE6 /* LoginService.swift */; };
+		82F1550121F4149C00776D0A /* Startup LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F1550021F4149C00776D0A /* Startup LoadingViewController.swift */; };
+		82FA7788222ADF150083D136 /* categoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FA7787222ADF150083D136 /* categoryCell.swift */; };
+		82FA77D4222B31080083D136 /* categoryCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FA77D3222B31080083D136 /* categoryCollectionCell.swift */; };
+		82FE957921440C9B001BFC69 /* MultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE957821440C9B001BFC69 /* MultipleChoice.swift */; };
+		82FE957B21440FDA001BFC69 /* MCTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE957A21440FDA001BFC69 /* MCTestView.swift */; };
+		82FEEF37216556B800BCAC09 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FEEF36216556B800BCAC09 /* ProfilePage.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		81283C3A230D805000566D63 /* ChallengeViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeViewer.swift; sourceTree = "<group>"; };
+		8158D23F232F11BA0093E122 /* FSCDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FSCDetailView.swift; sourceTree = "<group>"; };
+		81FD2687231C5E02007FBD6C /* ForeignSubCapitalsMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ForeignSubCapitalsMain.swift; path = "GeoGuru/Foreign Subdivision Capitals/ForeignSubCapitalsMain.swift"; sourceTree = SOURCE_ROOT; };
+		82159F11216043280018E46B /* ChallengeModeSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeModeSelect.swift; sourceTree = "<group>"; };
+		821A61802333AF64001D38D6 /* Capitals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capitals.swift; sourceTree = "<group>"; };
+		821E2E60215667CF00055F5F /* PracticeResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeResults.swift; sourceTree = "<group>"; };
+		821E2E622156844F00055F5F /* right.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = right.mp3; sourceTree = "<group>"; };
+		821E2E642156845B00055F5F /* finish.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = finish.wav; sourceTree = "<group>"; };
+		821E2E652156845B00055F5F /* wrong.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = wrong.wav; sourceTree = "<group>"; };
+		821E2E69215684F200055F5F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		821E3EB7229B5D1600702349 /* OHCircleSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OHCircleSegue.swift; sourceTree = "<group>"; };
+		82307504213D6CCB002215CB /* GeoGuru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoGuru.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		82307507213D6CCB002215CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8230750C213D6CCB002215CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8230750E213D6CCC002215CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		82307511213D6CCC002215CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		82307513213D6CCC002215CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		82307519213D6D6A002215CB /* StartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreen.swift; sourceTree = "<group>"; };
+		8230751B213D79AC002215CB /* ModeSelect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeSelect.swift; sourceTree = "<group>"; };
+		82487EF52186157000273F15 /* OrderBooksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderBooksView.swift; sourceTree = "<group>"; };
+		8251145C21A84C1900226386 /* Futura Heavy font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Heavy font.ttf"; sourceTree = "<group>"; };
+		8251145D21A84C1A00226386 /* Futura Extra Black font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Extra Black font.ttf"; sourceTree = "<group>"; };
+		8251145E21A84C1B00226386 /* Futura Bold Italic font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Bold Italic font.ttf"; sourceTree = "<group>"; };
+		8251145F21A84C1C00226386 /* Futura Light Italic font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Light Italic font.ttf"; sourceTree = "<group>"; };
+		8251146021A84C1D00226386 /* Futura Bold font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Bold font.ttf"; sourceTree = "<group>"; };
+		8251146121A84C1F00226386 /* unicode.futurabb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unicode.futurabb.ttf; sourceTree = "<group>"; };
+		8251146221A84C2000226386 /* Futura Light font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Light font.ttf"; sourceTree = "<group>"; };
+		8251146321A84C2200226386 /* Futura Book Italic font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Book Italic font.ttf"; sourceTree = "<group>"; };
+		8251146421A84C2300226386 /* Futura Book font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Book font.ttf"; sourceTree = "<group>"; };
+		8251146521A84C2400226386 /* futur.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = futur.ttf; sourceTree = "<group>"; };
+		8251146621A84C2500226386 /* futura medium condensed bt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura medium condensed bt.ttf"; sourceTree = "<group>"; };
+		8251146721A84C2600226386 /* Futura XBlk BT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura XBlk BT.ttf"; sourceTree = "<group>"; };
+		8251146821A84C2700226386 /* tt0205m_.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tt0205m_.ttf; sourceTree = "<group>"; };
+		8251146921A84C2800226386 /* Futura-CondensedLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura-CondensedLight.otf"; sourceTree = "<group>"; };
+		8251146A21A84C2900226386 /* futura light bt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura light bt.ttf"; sourceTree = "<group>"; };
+		8251146B21A84C2A00226386 /* futura medium bt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "futura medium bt.ttf"; sourceTree = "<group>"; };
+		8251146C21A84C2C00226386 /* Futura Medium Italic font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Medium Italic font.ttf"; sourceTree = "<group>"; };
+		8251146D21A84C2D00226386 /* unicode.futurab.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = unicode.futurab.ttf; sourceTree = "<group>"; };
+		8251146E21A84C2E00226386 /* Futura Heavy Italic font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Futura Heavy Italic font.ttf"; sourceTree = "<group>"; };
+		8251148221A84DD800226386 /* userLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userLogin.swift; sourceTree = "<group>"; };
+		8251148621A8659100226386 /* GeoGuru.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GeoGuru.entitlements; sourceTree = "<group>"; };
+		8251148721A8662F00226386 /* GeoGuru-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoGuru-Bridging-Header.h"; sourceTree = "<group>"; };
+		8259A6692160465E0056819D /* ChallengeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeGame.swift; sourceTree = "<group>"; };
+		825AE5D0213F34DA003F3B6D /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		825AE5D2213F395A003F3B6D /* GeoQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoQuestions.swift; sourceTree = "<group>"; };
+		825D1D4B2172795700651DE9 /* Bungee-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bungee-Regular.ttf"; sourceTree = "<group>"; };
+		825E6AE62156F6250083ED9A /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		826355BF217284FB00ED5F63 /* seguisb.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisb.ttf; sourceTree = "<group>"; };
+		826355C0217284FB00ED5F63 /* seguisbi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisbi.ttf; sourceTree = "<group>"; };
+		826355C1217284FB00ED5F63 /* seguili.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguili.ttf; sourceTree = "<group>"; };
+		826355C2217284FB00ED5F63 /* segoeuil.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeuil.ttf; sourceTree = "<group>"; };
+		826355C3217284FB00ED5F63 /* segoeuiz.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeuiz.ttf; sourceTree = "<group>"; };
+		826355C4217284FC00ED5F63 /* seguisli.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguisli.ttf; sourceTree = "<group>"; };
+		826355C5217284FC00ED5F63 /* seguibli.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguibli.ttf; sourceTree = "<group>"; };
+		826355C6217284FC00ED5F63 /* segoeui.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeui.ttf; sourceTree = "<group>"; };
+		826355C7217284FC00ED5F63 /* seguibl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = seguibl.ttf; sourceTree = "<group>"; };
+		826355C8217284FC00ED5F63 /* segoeuib.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeuib.ttf; sourceTree = "<group>"; };
+		826355C9217284FC00ED5F63 /* segoeuii.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeuii.ttf; sourceTree = "<group>"; };
+		826355CA217284FC00ED5F63 /* segoeuisl.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = segoeuisl.ttf; sourceTree = "<group>"; };
+		826355DB2173A05100ED5F63 /* ScoreMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreMainCell.swift; sourceTree = "<group>"; };
+		826BA80422997CE3009DD977 /* GeoStatQuizSetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoStatQuizSetup.swift; sourceTree = "<group>"; };
+		826BA808229A185F009DD977 /* StatTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatTestView.swift; sourceTree = "<group>"; };
+		826BA80A229A1902009DD977 /* GeoStatsQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoStatsQuestions.swift; sourceTree = "<group>"; };
+		8297EE2822983FA500E798B5 /* geoStatContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geoStatContainer.swift; sourceTree = "<group>"; };
+		8297EE2B2298400300E798B5 /* geoStatSub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geoStatSub.swift; sourceTree = "<group>"; };
+		8297EE2D2298406D00E798B5 /* geoContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = geoContainer.swift; sourceTree = "<group>"; };
+		8297EE2F2298626000E798B5 /* statSubCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = statSubCell.swift; sourceTree = "<group>"; };
+		82BAE8AB218F30150054B912 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		82C02A74222F6E6C0029A2B7 /* factCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = factCell.swift; sourceTree = "<group>"; };
+		82C1959B2191EA1800CF8212 /* DatabaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseView.swift; sourceTree = "<group>"; };
+		82C392832230AB3900E3145B /* onlineBooks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onlineBooks.swift; sourceTree = "<group>"; };
+		82C392852230B14900E3145B /* purchaseTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = purchaseTableCell.swift; sourceTree = "<group>"; };
+		82D6858D2287485700B246AD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		82DB671B21572CFC008F249D /* FactFiles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactFiles.swift; sourceTree = "<group>"; };
+		82DB671D2157DD6B008F249D /* Factoid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Factoid.swift; sourceTree = "<group>"; };
+		82DB671F215810C2008F249D /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		82DB672121582332008F249D /* LocationSearchTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSearchTable.swift; sourceTree = "<group>"; };
+		82E3F0EC21A9F737008E6FE6 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		82F1550021F4149C00776D0A /* Startup LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Startup LoadingViewController.swift"; sourceTree = "<group>"; };
+		82FA7787222ADF150083D136 /* categoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCell.swift; sourceTree = "<group>"; };
+		82FA77D3222B31080083D136 /* categoryCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categoryCollectionCell.swift; sourceTree = "<group>"; };
+		82FE957821440C9B001BFC69 /* MultipleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoice.swift; sourceTree = "<group>"; };
+		82FE957A21440FDA001BFC69 /* MCTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTestView.swift; sourceTree = "<group>"; };
+		82FEEF36216556B800BCAC09 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		82307501213D6CCB002215CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82D6858E2287485700B246AD /* StoreKit.framework in Frameworks */,
+				821E2E6A215684F200055F5F /* AVFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81FD2689231C5E0A007FBD6C /* Foreign Subdivision Capitals */ = {
+			isa = PBXGroup;
+			children = (
+				8158D23F232F11BA0093E122 /* FSCDetailView.swift */,
+				81FD2687231C5E02007FBD6C /* ForeignSubCapitalsMain.swift */,
+			);
+			path = "Foreign Subdivision Capitals";
+			sourceTree = "<group>";
+		};
+		821E2E68215684F200055F5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				82D6858D2287485700B246AD /* StoreKit.framework */,
+				821E2E69215684F200055F5F /* AVFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		821E3EB6229B5CF200702349 /* CustomSegue */ = {
+			isa = PBXGroup;
+			children = (
+				821E3EB7229B5D1600702349 /* OHCircleSegue.swift */,
+			);
+			name = CustomSegue;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		823074FB213D6CCB002215CB = {
+			isa = PBXGroup;
+			children = (
+				82307506213D6CCB002215CB /* GeoGuru */,
+				82307505213D6CCB002215CB /* Products */,
+				821E2E68215684F200055F5F /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		82307505213D6CCB002215CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				82307504213D6CCB002215CB /* GeoGuru.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		82307506213D6CCB002215CB /* GeoGuru */ = {
+			isa = PBXGroup;
+			children = (
+				8251148621A8659100226386 /* GeoGuru.entitlements */,
+				8251148721A8662F00226386 /* GeoGuru-Bridging-Header.h */,
+				821E3EB6229B5CF200702349 /* CustomSegue */,
+				8240C06321BD63D0008FAE24 /* Questions */,
+				8240C06221BD63CA008FAE24 /* Sounds */,
+				8240C06121BD6388008FAE24 /* Map */,
+				8240C06021BD6383008FAE24 /* Profile */,
+				8240C05F21BD6373008FAE24 /* OrderBooks */,
+				8240C05E21BD636D008FAE24 /* USFactFiles */,
+				81FD2689231C5E0A007FBD6C /* Foreign Subdivision Capitals */,
+				8240C05A21BD6307008FAE24 /* Main */,
+				8240C05D21BD6367008FAE24 /* Practice */,
+				8240C05C21BD6360008FAE24 /* Challenge */,
+				8297EE2A22983FAF00E798B5 /* Geo Stats */,
+				8240C05B21BD6341008FAE24 /* fonts */,
+				82307507213D6CCB002215CB /* AppDelegate.swift */,
+				82307510213D6CCC002215CB /* LaunchScreen.storyboard */,
+				8230750B213D6CCB002215CB /* Main.storyboard */,
+				8230750E213D6CCC002215CB /* Assets.xcassets */,
+				82307513213D6CCC002215CB /* Info.plist */,
+				82BAE8AB218F30150054B912 /* GoogleService-Info.plist */,
+			);
+			path = GeoGuru;
+			sourceTree = "<group>";
+		};
+		8240C05A21BD6307008FAE24 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				82F1550021F4149C00776D0A /* Startup LoadingViewController.swift */,
+				825E6AE62156F6250083ED9A /* MainMenu.swift */,
+				82E3F0EC21A9F737008E6FE6 /* LoginService.swift */,
+				82C1959B2191EA1800CF8212 /* DatabaseView.swift */,
+				8251148221A84DD800226386 /* userLogin.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8240C05B21BD6341008FAE24 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				825D1D4B2172795700651DE9 /* Bungee-Regular.ttf */,
+				826355BE217284D800ED5F63 /* segoeui-fonts */,
+				8251145B21A84BF200226386 /* futura-fonts */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		8240C05C21BD6360008FAE24 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				82159F11216043280018E46B /* ChallengeModeSelect.swift */,
+				8259A6692160465E0056819D /* ChallengeGame.swift */,
+				81283C3A230D805000566D63 /* ChallengeViewer.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		8240C05D21BD6367008FAE24 /* Practice */ = {
+			isa = PBXGroup;
+			children = (
+				82FA7787222ADF150083D136 /* categoryCell.swift */,
+				82FA77D3222B31080083D136 /* categoryCollectionCell.swift */,
+				826355DB2173A05100ED5F63 /* ScoreMainCell.swift */,
+				82307519213D6D6A002215CB /* StartScreen.swift */,
+				821E2E60215667CF00055F5F /* PracticeResults.swift */,
+				8230751B213D79AC002215CB /* ModeSelect.swift */,
+				825AE5D0213F34DA003F3B6D /* TestView.swift */,
+				82FE957A21440FDA001BFC69 /* MCTestView.swift */,
+			);
+			path = Practice;
+			sourceTree = "<group>";
+		};
+		8240C05E21BD636D008FAE24 /* USFactFiles */ = {
+			isa = PBXGroup;
+			children = (
+				82DB671B21572CFC008F249D /* FactFiles.swift */,
+				82DB671D2157DD6B008F249D /* Factoid.swift */,
+				82C02A74222F6E6C0029A2B7 /* factCell.swift */,
+			);
+			path = USFactFiles;
+			sourceTree = "<group>";
+		};
+		8240C05F21BD6373008FAE24 /* OrderBooks */ = {
+			isa = PBXGroup;
+			children = (
+				82487EF52186157000273F15 /* OrderBooksView.swift */,
+				82C392832230AB3900E3145B /* onlineBooks.swift */,
+				82C392852230B14900E3145B /* purchaseTableCell.swift */,
+			);
+			path = OrderBooks;
+			sourceTree = "<group>";
+		};
+		8240C06021BD6383008FAE24 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				82FEEF36216556B800BCAC09 /* ProfilePage.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8240C06121BD6388008FAE24 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				82DB671F215810C2008F249D /* MapView.swift */,
+				82DB672121582332008F249D /* LocationSearchTable.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		8240C06221BD63CA008FAE24 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				821E2E642156845B00055F5F /* finish.wav */,
+				821E2E622156844F00055F5F /* right.mp3 */,
+				821E2E652156845B00055F5F /* wrong.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		8240C06321BD63D0008FAE24 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				821A61802333AF64001D38D6 /* Capitals.swift */,
+				825AE5D2213F395A003F3B6D /* GeoQuestions.swift */,
+				82FE957821440C9B001BFC69 /* MultipleChoice.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		8251145B21A84BF200226386 /* futura-fonts */ = {
+			isa = PBXGroup;
+			children = (
+				8251146521A84C2400226386 /* futur.ttf */,
+				8251146021A84C1D00226386 /* Futura Bold font.ttf */,
+				8251145E21A84C1B00226386 /* Futura Bold Italic font.ttf */,
+				8251146421A84C2300226386 /* Futura Book font.ttf */,
+				8251146321A84C2200226386 /* Futura Book Italic font.ttf */,
+				8251145D21A84C1A00226386 /* Futura Extra Black font.ttf */,
+				8251145C21A84C1900226386 /* Futura Heavy font.ttf */,
+				8251146E21A84C2E00226386 /* Futura Heavy Italic font.ttf */,
+				8251146A21A84C2900226386 /* futura light bt.ttf */,
+				8251146221A84C2000226386 /* Futura Light font.ttf */,
+				8251145F21A84C1C00226386 /* Futura Light Italic font.ttf */,
+				8251146B21A84C2A00226386 /* futura medium bt.ttf */,
+				8251146621A84C2500226386 /* futura medium condensed bt.ttf */,
+				8251146C21A84C2C00226386 /* Futura Medium Italic font.ttf */,
+				8251146721A84C2600226386 /* Futura XBlk BT.ttf */,
+				8251146921A84C2800226386 /* Futura-CondensedLight.otf */,
+				8251146821A84C2700226386 /* tt0205m_.ttf */,
+				8251146D21A84C2D00226386 /* unicode.futurab.ttf */,
+				8251146121A84C1F00226386 /* unicode.futurabb.ttf */,
+			);
+			path = "futura-fonts";
+			sourceTree = "<group>";
+		};
+		826355BE217284D800ED5F63 /* segoeui-fonts */ = {
+			isa = PBXGroup;
+			children = (
+				826355C6217284FC00ED5F63 /* segoeui.ttf */,
+				826355C8217284FC00ED5F63 /* segoeuib.ttf */,
+				826355C9217284FC00ED5F63 /* segoeuii.ttf */,
+				826355C2217284FB00ED5F63 /* segoeuil.ttf */,
+				826355CA217284FC00ED5F63 /* segoeuisl.ttf */,
+				826355C3217284FB00ED5F63 /* segoeuiz.ttf */,
+				826355C7217284FC00ED5F63 /* seguibl.ttf */,
+				826355C5217284FC00ED5F63 /* seguibli.ttf */,
+				826355C1217284FB00ED5F63 /* seguili.ttf */,
+				826355BF217284FB00ED5F63 /* seguisb.ttf */,
+				826355C0217284FB00ED5F63 /* seguisbi.ttf */,
+				826355C4217284FC00ED5F63 /* seguisli.ttf */,
+			);
+			name = "segoeui-fonts";
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+		8297EE2A22983FAF00E798B5 /* Geo Stats */ = {
+			isa = PBXGroup;
+			children = (
+				826BA80422997CE3009DD977 /* GeoStatQuizSetup.swift */,
+				8297EE2D2298406D00E798B5 /* geoContainer.swift */,
+				8297EE2822983FA500E798B5 /* geoStatContainer.swift */,
+				826BA80A229A1902009DD977 /* GeoStatsQuestions.swift */,
+				8297EE2B2298400300E798B5 /* geoStatSub.swift */,
+				8297EE2F2298626000E798B5 /* statSubCell.swift */,
+				826BA808229A185F009DD977 /* StatTestView.swift */,
+			);
+			path = "Geo Stats";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		82307503213D6CCB002215CB /* GeoGuru */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 82307516213D6CCC002215CB /* Build configuration list for PBXNativeTarget "GeoGuru" */;
+			buildPhases = (
+				82307500213D6CCB002215CB /* Sources */,
+				82307501213D6CCB002215CB /* Frameworks */,
+				82307502213D6CCB002215CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GeoGuru;
+			productName = GeoGuru;
+			productReference = 82307504213D6CCB002215CB /* GeoGuru.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		823074FC213D6CCB002215CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = GeoGuru;
+				TargetAttributes = {
+					82307503213D6CCB002215CB = {
+						CreatedOnToolsVersion = 10.0;
+						LastSwiftMigration = "";
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 823074FF213D6CCB002215CB /* Build configuration list for PBXProject "GeoGuru" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 823074FB213D6CCB002215CB;
+			productRefGroup = 82307505213D6CCB002215CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				82307503213D6CCB002215CB /* GeoGuru */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		82307502213D6CCB002215CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				821E2E632156845000055F5F /* right.mp3 in Resources */,
+				8251147C21A84C2E00226386 /* Futura-CondensedLight.otf in Resources */,
+				826355CB217284FC00ED5F63 /* seguisb.ttf in Resources */,
+				8251147621A84C2E00226386 /* Futura Book Italic font.ttf in Resources */,
+				8251147121A84C2E00226386 /* Futura Bold Italic font.ttf in Resources */,
+				8251147021A84C2E00226386 /* Futura Extra Black font.ttf in Resources */,
+				826355D3217284FC00ED5F63 /* seguibl.ttf in Resources */,
+				826355D2217284FC00ED5F63 /* segoeui.ttf in Resources */,
+				826355CC217284FC00ED5F63 /* seguisbi.ttf in Resources */,
+				826355CF217284FC00ED5F63 /* segoeuiz.ttf in Resources */,
+				826355D5217284FC00ED5F63 /* segoeuii.ttf in Resources */,
+				826355CD217284FC00ED5F63 /* seguili.ttf in Resources */,
+				826355D4217284FC00ED5F63 /* segoeuib.ttf in Resources */,
+				8251147A21A84C2E00226386 /* Futura XBlk BT.ttf in Resources */,
+				8251146F21A84C2E00226386 /* Futura Heavy font.ttf in Resources */,
+				82307512213D6CCC002215CB /* LaunchScreen.storyboard in Resources */,
+				8251147721A84C2E00226386 /* Futura Book font.ttf in Resources */,
+				8251147D21A84C2E00226386 /* futura light bt.ttf in Resources */,
+				826355D0217284FC00ED5F63 /* seguisli.ttf in Resources */,
+				826355CE217284FC00ED5F63 /* segoeuil.ttf in Resources */,
+				8230750F213D6CCC002215CB /* Assets.xcassets in Resources */,
+				826355D6217284FC00ED5F63 /* segoeuisl.ttf in Resources */,
+				8251147521A84C2E00226386 /* Futura Light font.ttf in Resources */,
+				8251147B21A84C2E00226386 /* tt0205m_.ttf in Resources */,
+				821E2E672156845C00055F5F /* wrong.wav in Resources */,
+				826355D1217284FC00ED5F63 /* seguibli.ttf in Resources */,
+				8251147321A84C2E00226386 /* Futura Bold font.ttf in Resources */,
+				8251147921A84C2E00226386 /* futura medium condensed bt.ttf in Resources */,
+				8251147821A84C2E00226386 /* futur.ttf in Resources */,
+				8251147421A84C2E00226386 /* unicode.futurabb.ttf in Resources */,
+				8251147E21A84C2E00226386 /* futura medium bt.ttf in Resources */,
+				8251148121A84C2E00226386 /* Futura Heavy Italic font.ttf in Resources */,
+				8230750D213D6CCB002215CB /* Main.storyboard in Resources */,
+				8251147F21A84C2E00226386 /* Futura Medium Italic font.ttf in Resources */,
+				8251147221A84C2E00226386 /* Futura Light Italic font.ttf in Resources */,
+				82BAE8AC218F30150054B912 /* GoogleService-Info.plist in Resources */,
+				8251148021A84C2E00226386 /* unicode.futurab.ttf in Resources */,
+				825D1D4C2172795700651DE9 /* Bungee-Regular.ttf in Resources */,
+				821E2E662156845C00055F5F /* finish.wav in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		82307500213D6CCB002215CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82DB672221582332008F249D /* LocationSearchTable.swift in Sources */,
+				826BA80522997CE4009DD977 /* GeoStatQuizSetup.swift in Sources */,
+				82C02A75222F6E6C0029A2B7 /* factCell.swift in Sources */,
+				81FD2688231C5E02007FBD6C /* ForeignSubCapitalsMain.swift in Sources */,
+				826355DC2173A05100ED5F63 /* ScoreMainCell.swift in Sources */,
+				82FE957921440C9B001BFC69 /* MultipleChoice.swift in Sources */,
+				82DB6720215810C2008F249D /* MapView.swift in Sources */,
+				82C392862230B14900E3145B /* purchaseTableCell.swift in Sources */,
+				825E6AE72156F6250083ED9A /* MainMenu.swift in Sources */,
+				82487EF62186157000273F15 /* OrderBooksView.swift in Sources */,
+				8251148321A84DD800226386 /* userLogin.swift in Sources */,
+				826BA809229A185F009DD977 /* StatTestView.swift in Sources */,
+				8297EE2E2298406D00E798B5 /* geoContainer.swift in Sources */,
+				82F1550121F4149C00776D0A /* Startup LoadingViewController.swift in Sources */,
+				82FA77D4222B31080083D136 /* categoryCollectionCell.swift in Sources */,
+				82159F12216043280018E46B /* ChallengeModeSelect.swift in Sources */,
+				81283C3B230D805000566D63 /* ChallengeViewer.swift in Sources */,
+				825AE5D1213F34DA003F3B6D /* TestView.swift in Sources */,
+				825AE5D3213F395A003F3B6D /* GeoQuestions.swift in Sources */,
+				82FA7788222ADF150083D136 /* categoryCell.swift in Sources */,
+				8158D240232F11BA0093E122 /* FSCDetailView.swift in Sources */,
+				8259A66A2160465E0056819D /* ChallengeGame.swift in Sources */,
+				82C392842230AB3900E3145B /* onlineBooks.swift in Sources */,
+				8297EE302298626000E798B5 /* statSubCell.swift in Sources */,
+				8297EE2922983FA500E798B5 /* geoStatContainer.swift in Sources */,
+				8230751A213D6D6A002215CB /* StartScreen.swift in Sources */,
+				82DB671C21572CFC008F249D /* FactFiles.swift in Sources */,
+				82E3F0ED21A9F737008E6FE6 /* LoginService.swift in Sources */,
+				82FEEF37216556B800BCAC09 /* ProfilePage.swift in Sources */,
+				826BA80B229A1902009DD977 /* GeoStatsQuestions.swift in Sources */,
+				82C1959C2191EA1800CF8212 /* DatabaseView.swift in Sources */,
+				821E3EB8229B5D1600702349 /* OHCircleSegue.swift in Sources */,
+				8230751C213D79AC002215CB /* ModeSelect.swift in Sources */,
+				82DB671E2157DD6B008F249D /* Factoid.swift in Sources */,
+				821A61812333AF64001D38D6 /* Capitals.swift in Sources */,
+				8297EE2C2298400300E798B5 /* geoStatSub.swift in Sources */,
+				82FE957B21440FDA001BFC69 /* MCTestView.swift in Sources */,
+				82307508213D6CCB002215CB /* AppDelegate.swift in Sources */,
+				821E2E61215667CF00055F5F /* PracticeResults.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8230750B213D6CCB002215CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8230750C213D6CCB002215CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		82307510213D6CCC002215CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				82307511213D6CCC002215CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		82307514213D6CCC002215CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		82307515213D6CCC002215CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		82307517213D6CCC002215CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GeoGuru/GeoGuru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R6T6D54FQ;
+				INFOPLIST_FILE = GeoGuru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MetricMix.GeoGuru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeoGuru/GeoGuru-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		82307518213D6CCC002215CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = GeoGuru/GeoGuru.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2R6T6D54FQ;
+				INFOPLIST_FILE = GeoGuru/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MetricMix.GeoGuru;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GeoGuru/GeoGuru-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		823074FF213D6CCB002215CB /* Build configuration list for PBXProject "GeoGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82307514213D6CCC002215CB /* Debug */,
+				82307515213D6CCC002215CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		82307516213D6CCC002215CB /* Build configuration list for PBXNativeTarget "GeoGuru" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				82307517213D6CCC002215CB /* Debug */,
+				82307518213D6CCC002215CB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 823074FC213D6CCB002215CB /* Project object */;
+}
