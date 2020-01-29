@@ -87,6 +87,7 @@
 		82FE957921440C9B001BFC69 /* MultipleChoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE957821440C9B001BFC69 /* MultipleChoice.swift */; };
 		82FE957B21440FDA001BFC69 /* MCTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FE957A21440FDA001BFC69 /* MCTestView.swift */; };
 		82FEEF37216556B800BCAC09 /* ProfilePage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82FEEF36216556B800BCAC09 /* ProfilePage.swift */; };
+		9F0A9A2A194378473A927B77 /* Pods_GeoGuru.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 95C0C71A6C08FA36B8E9B3F4 /* Pods_GeoGuru.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -174,6 +175,9 @@
 		82FE957821440C9B001BFC69 /* MultipleChoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultipleChoice.swift; sourceTree = "<group>"; };
 		82FE957A21440FDA001BFC69 /* MCTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MCTestView.swift; sourceTree = "<group>"; };
 		82FEEF36216556B800BCAC09 /* ProfilePage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePage.swift; sourceTree = "<group>"; };
+		95C0C71A6C08FA36B8E9B3F4 /* Pods_GeoGuru.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GeoGuru.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBE92E5786B1E9DF94CA46F3 /* Pods-GeoGuru.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoGuru.debug.xcconfig"; path = "Target Support Files/Pods-GeoGuru/Pods-GeoGuru.debug.xcconfig"; sourceTree = "<group>"; };
+		D662B872D81B1495EE74FDBF /* Pods-GeoGuru.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GeoGuru.release.xcconfig"; path = "Target Support Files/Pods-GeoGuru/Pods-GeoGuru.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +187,7 @@
 			files = (
 				82D6858E2287485700B246AD /* StoreKit.framework in Frameworks */,
 				821E2E6A215684F200055F5F /* AVFoundation.framework in Frameworks */,
+				9F0A9A2A194378473A927B77 /* Pods_GeoGuru.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -203,6 +208,7 @@
 			children = (
 				82D6858D2287485700B246AD /* StoreKit.framework */,
 				821E2E69215684F200055F5F /* AVFoundation.framework */,
+				95C0C71A6C08FA36B8E9B3F4 /* Pods_GeoGuru.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -222,6 +228,7 @@
 				82307506213D6CCB002215CB /* GeoGuru */,
 				82307505213D6CCB002215CB /* Products */,
 				821E2E68215684F200055F5F /* Frameworks */,
+				EDC7076691535BFF03BD0299 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -425,6 +432,16 @@
 			path = "Geo Stats";
 			sourceTree = "<group>";
 		};
+		EDC7076691535BFF03BD0299 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBE92E5786B1E9DF94CA46F3 /* Pods-GeoGuru.debug.xcconfig */,
+				D662B872D81B1495EE74FDBF /* Pods-GeoGuru.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -432,9 +449,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 82307516213D6CCC002215CB /* Build configuration list for PBXNativeTarget "GeoGuru" */;
 			buildPhases = (
+				01A21578F7AD94F5E1FBAC0B /* [CP] Check Pods Manifest.lock */,
 				82307500213D6CCB002215CB /* Sources */,
 				82307501213D6CCB002215CB /* Frameworks */,
 				82307502213D6CCB002215CB /* Resources */,
+				EF0DBE56E7FED4DF8B4EC475 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -538,6 +557,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A21578F7AD94F5E1FBAC0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GeoGuru-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF0DBE56E7FED4DF8B4EC475 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoGuru/Pods-GeoGuru-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GeoGuru/Pods-GeoGuru-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GeoGuru/Pods-GeoGuru-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		82307500213D6CCB002215CB /* Sources */ = {
@@ -728,6 +789,7 @@
 		};
 		82307517213D6CCC002215CB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBE92E5786B1E9DF94CA46F3 /* Pods-GeoGuru.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -752,6 +814,7 @@
 		};
 		82307518213D6CCC002215CB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D662B872D81B1495EE74FDBF /* Pods-GeoGuru.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

@@ -125,7 +125,7 @@ class purchaseView: UIViewController, UITableViewDelegate, UITableViewDataSource
                     print("Invalid product identifier: \(invalidProductId)")
                 }
                 else {
-                    print("Error: \(result.error)")
+                    print("Error: \(result.error!.localizedDescription)")
                 }
             }
             verifyPurchase(withID: productID, sharedSecret: sharedSecret)
