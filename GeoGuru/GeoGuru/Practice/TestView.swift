@@ -411,12 +411,10 @@ class TestView: UIViewController, AVAudioPlayerDelegate {
             hashset.add(random)
         }
         print("Hashset: \(hashset)")
-        
         for item in hashset {
             arr.append(item as! Int)
         }
         print("Array: \(arr)")
-        
         var newQuestions: [[String]] = []
         for item in arr {
             newQuestions.append(category[item])
